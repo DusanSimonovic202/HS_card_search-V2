@@ -1,38 +1,63 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: blanchedalmond;
+}
+
 .App {
+  background-color: blanchedalmond;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.card {
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 500px;
+  height: auto;
+}
+
+.card img {
+  height: 300px;
+}
+input:focus {
+  outline: none;
+}
+input {
+  width: 30%;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.submitbtn {
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: #5c5e53; /* Green */
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.submitbtn:hover {
+  background-color: #3e8e41;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitbtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
 }
