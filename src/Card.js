@@ -1,6 +1,15 @@
 import React from "react";
 
-const Card = ({ name, img, cardSet, faction, playerClass, type, race }) => {
+const Card = ({
+  name,
+  img,
+  cardSet,
+  faction,
+  playerClass,
+  type,
+  race,
+  rarity,
+}) => {
   return (
     <div className="card">
       {cardSet ? <h3>Card set: {cardSet}</h3> : ""}
@@ -8,6 +17,7 @@ const Card = ({ name, img, cardSet, faction, playerClass, type, race }) => {
       {img ? <img src={img} alt={name} /> : ""}
       {faction ? <h4>Faction: {faction}</h4> : ""}
       {playerClass ? <h4> Class: {playerClass}</h4> : ""}
+      {rarity ? <h4> rarity: {rarity}</h4> : ""}
       {type ? <h4>Type: {type}</h4> : ""}
       {race ? <h4>Race: {race}</h4> : ""}
     </div>

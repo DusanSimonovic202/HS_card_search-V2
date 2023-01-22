@@ -1,11 +1,14 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: blanchedalmond;
+  font-family: "MedievalSharp", serif;
+  background-color: #f5906b;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .App {
-  background-color: blanchedalmond;
+  background-color: #f5906b;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -18,9 +21,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 5px solid black;
   width: 500px;
   height: auto;
+  border-radius: 20px;
+  background-color: #f0d854;
 }
 
 .card img {
@@ -40,6 +45,7 @@ input {
   color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 10px;
+  font-family: "MedievalSharp", serif;
 }
 
 .submitbtn {
@@ -52,6 +58,8 @@ input {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 20px;
+  font-family: "MedievalSharp", serif;
+  margin-bottom: 20px;
 }
 .submitbtn:hover {
   background-color: #3e8e41;
@@ -60,4 +68,10 @@ input {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(5px);
+}
+
+.divsearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
