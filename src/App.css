@@ -1,14 +1,23 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "MedievalSharp", serif;
-  background-color: #f5906b;
-  background-size: auto;
-  background-repeat: no-repeat;
+  background-color: #d6d8cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .App {
+  padding-left: 150px;
+  padding-right: 150px;
+  border-radius: 25px;
+  max-width: 1200px;
+  height: 100%;
+  font-family: "MedievalSharp", serif;
   background-color: #f5906b;
+  background-size: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -35,7 +44,7 @@ input:focus {
   outline: none;
 }
 input {
-  width: 30%;
+  width: 60%;
   height: 50px;
   border: none;
   border-radius: 15px;
@@ -74,4 +83,26 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.divlogout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.div-login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./assets/cover.jpg");
+  background-image: cover;
+}
+.div-login h1 {
+  color: white;
+  font-size: 50px;
 }
